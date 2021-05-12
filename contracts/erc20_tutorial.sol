@@ -1,13 +1,13 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'ApplexCoin' token contract
 //
 // Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
+// Symbol      : APP
+// Name        : ApplexCoin
 // Total supply: 100000000
-// Decimals    : 18
+// Decimals    : 8
 //
 // Enjoy.
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract ApplexCoin is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        emit Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        symbol = "APP";
+        name = "ApplexCoin";
+        decimals = 8;
+        _totalSupply = 10000000000000000;
+        balances[0xb5b51e708c97e85bdfe49e0ae9b340f482e049b1] = _totalSupply;
+        emit Transfer(address(0), 0xb5b51e708c97e85bdfe49e0ae9b340f482e049b1, _totalSupply);
     }
 
 
